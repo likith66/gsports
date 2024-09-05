@@ -102,8 +102,8 @@
 					</tr>
 										<tr>
 						<th>Booking date</th>
-						<td>
-							05-Sep-2024						</td>
+						<td id="asker">
+							07-Sep-2024						</td>
 					</tr>
 					<tr>
 						<th>Booking slot</th>
@@ -172,6 +172,14 @@
 		}
 	</style>
 
-	
+	<script>
+		n =  new Date();
+		y = n.getFullYear();
+		m = n.getMonth();
+		d = n.getDate();
+		d = d<10 ? "0" + d : d;
+		var mon = ["Jan", "Feb","Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov","Dec"];
+		document.getElementById("asker").innerHTML = d + "-" + mon[m] + "-" + y;
+	</script>
 
 </body></html>
