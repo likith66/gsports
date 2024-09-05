@@ -181,7 +181,7 @@
 		var mon = ["Jan", "Feb","Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov","Dec"];
 		document.getElementById("asker").innerHTML = d + "-" + mon[m] + "-" + y;
 
-		x = n.getMonth();
+		x = n.getMonth() + 1;
 		x = x<10 ? "0" + x : x;
 		document.getElementById("refno").innerHTML = ""+y+""+x+"0"+"49370203";
 	</script>
